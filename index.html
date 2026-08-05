@@ -1,9 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="si">
 <head>
-    <title>My Free Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>මගේ පෞද්ගලික වෙබ් අඩවිය | My Personal Website</title>
+    <style>
+        /* CSS Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #0072ff, #00c6ff);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .card h2 {
+            color: #0072ff;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 5px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+        }
+        .skills-list li {
+            background: #eef5ff;
+            color: #0072ff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        .contact-btn {
+            display: inline-block;
+            background: #0072ff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .contact-btn:hover {
+            background: #005bb5;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>ආයුබෝවන්! මේ මගේ පළමු නොමිලේ වෙබ් අඩවියයි.</h1>
+
+    <!-- Header Section -->
+    <header>
+        <h1>welcome </h1>
+        <p>Software Developer / Web Enthusiast</p>
+    </header>
+
+    <div class="container">
+        <!-- About Me Section -->
+        <div class="card">
+            <h2>මම ගැන (About Me)</h2>
+            <p>
+                සාදරයෙන් පිළිගන්නවා මගේ පෞද්ගලික වෙබ් අඩවියට! මම තාක්ෂණයට සහ අලුත් දේවල් ඉගෙනගන්න කැමති කෙනෙක්. 
+                මේ වෙබ් අඩවිය මගින් මගේ විස්තර සහ මගේ නිර්මාණ ඔබ වෙත ගෙන ඒමට මම බලාපොරොත්තු වෙනවා.
+            </p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="card">
+            <h2>මා සතු කුසලතා (Skills)</h2>
+            <ul class="skills-list">
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>GitHub</li>
+                <li>Web Design</li>
+                <li>Problem Solving</li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="card">
+            <h2>0743791556 (Contact Me)</h2>
+            <p>ඔබට මා හා සම්බන්ධ වීමට අවශ්‍ය නම් පහත බොත්තම හරහා විද්‍යුත් තැපෑල (Email) යොමු කරන්න.</p>
+            <a href="mailto:your-email@gmail.com" class="contact-btn">Email එකක් යවන්න</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 [anthoney edwin barretto]. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
