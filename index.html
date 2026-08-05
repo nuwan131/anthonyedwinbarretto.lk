@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>මගේ පෞද්ගලික වෙබ් අඩවිය | My Personal Website</title>
+    <!-- FontAwesome Icons සඳහා -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* CSS Styling */
         * {
             margin: 0;
             padding: 0;
@@ -21,14 +22,24 @@
             background: linear-gradient(135deg, #0072ff, #00c6ff);
             color: white;
             text-align: center;
-            padding: 60px 20px;
+            padding: 50px 20px;
+        }
+        /* Profile Image Styling */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin-bottom: 15px;
         }
         header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 2.2rem;
+            margin-bottom: 5px;
         }
         header p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             opacity: 0.9;
         }
         .container {
@@ -62,19 +73,36 @@
             border-radius: 20px;
             font-weight: 600;
         }
-        .contact-btn {
-            display: inline-block;
-            background: #0072ff;
+        
+        /* Social Media Icons Styling */
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 15px;
+        }
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
             color: white;
-            padding: 10px 20px;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-            transition: 0.3s;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: transform 0.2s;
         }
-        .contact-btn:hover {
-            background: #005bb5;
+        .social-btn:hover {
+            transform: translateY(-3px);
         }
+        /* Platform Colors */
+        .fb { background-color: #1877F2; }
+        .wa { background-color: #25D366; }
+        .insta { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .x-twitter { background-color: #000000; }
+        .threads { background-color: #101010; }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -85,45 +113,70 @@
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header Section (Image & Name) -->
     <header>
-        <h1>welcome </h1>
-        <p>Software Developer / Web Enthusiast</p>
+        <!-- ඡායාරූපයේ නම 'my-photo.jpg' ලෙස උඩුගත කර ඇත්නම් -->
+        <img src="my photo.jpg" alt="My Profile Photo" class="profile-img">
+        <h1>ආයුබෝවන්! මම [ඔයාගේ නම]</h1>
+        <p>Software Developer / Student / Web Enthusiast</p>
     </header>
 
     <div class="container">
         <!-- About Me Section -->
         <div class="card">
-            <h2>About Me</h2>
+            <h2>මම ගැන (About Me)</h2>
             <p>
                 සාදරයෙන් පිළිගන්නවා මගේ පෞද්ගලික වෙබ් අඩවියට! මම තාක්ෂණයට සහ අලුත් දේවල් ඉගෙනගන්න කැමති කෙනෙක්. 
-                මේ වෙබ් අඩවිය මගින් මගේ විස්තර සහ මගේ නිර්මාණ ඔබ වෙත ගෙන ඒමට මම බලාපොරොත්තු වෙනවා.
+                මෙතැනින් ඔබට මගේ Social Media හරහා මා හා සම්බන්ධ විය හැක.
             </p>
+        </div>
+
+        <!-- Social Media Links Section -->
+        <div class="card">
+            <h2>මා හා සම්බන්ධ වන්න (Connect with Me)</h2>
+            <div class="social-links">
+                <!-- Facebook -->
+                <a href="https://facebook.com/your-profile" target="_blank" class="social-btn fb">
+                    <i class="fa-brands fa-facebook-f"></i> Facebook
+                </a>
+                
+                <!-- WhatsApp (947XXXXXXXX ආකාරයට ෆෝන් නම්බර් එක දාන්න) -->
+                <a href="https://wa.me/94770000000" target="_blank" class="social-btn wa">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/your-username" target="_blank" class="social-btn insta">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+
+                <!-- X (Twitter) -->
+                <a href="https://x.com/your-username" target="_blank" class="social-btn x-twitter">
+                    <i class="fa-brands fa-x-twitter"></i> X
+                </a>
+
+                <!-- Threads -->
+                <a href="https://threads.net/@your-username" target="_blank" class="social-btn threads">
+                    <i class="fa-brands fa-threads"></i> Threads
+                </a>
+            </div>
         </div>
 
         <!-- Skills Section -->
         <div class="card">
-            <h2>(Skills)</h2>
+            <h2>මා සතු කුසලතා (Skills)</h2>
             <ul class="skills-list">
                 <li>HTML & CSS</li>
                 <li>JavaScript</li>
                 <li>GitHub</li>
                 <li>Web Design</li>
-                <li>Problem Solving</li>
             </ul>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="card">
-            <h2>0743791556 (Contact Me)</h2>
-            <p>ඔබට මා හා සම්බන්ධ වීමට අවශ්‍ය නම් පහත බොත්තම හරහා විද්‍යුත් තැපෑල (Email) යොමු කරන්න.</p>
-            <a href="mailto:your-email@gmail.com" class="contact-btn">Email එකක් යවන්න</a>
         </div>
     </div>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2026 [anthoney edwin barretto]. All Rights Reserved.</p>
+        <p>&copy; 2026 [ඔයාගේ නම]. All Rights Reserved.</p>
     </footer>
 
 </body>
